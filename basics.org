@@ -1,0 +1,93 @@
+#+TITLE: Org-mode Basics in Doom Emacs
+
+* Basics of Doom Emacs
+** M-x or SPC-:
+** Find in Doom help: SPC-h-d-s
+** Whenever touched package settings: doom sync
+After doom sync, do M-x doom/reload: SPC-h-r-r
+** File
+*** Find file (open ivy): SPC-.
+**** Move up and down: C-j and C-k
+Or C-n and C-p
+**** Reveal alternative options: C-o
+*** Find file in project: SPC-SPC
+*** File: SPC-f
+**** Rename/move file: SPC-f-R
+**** Save file as...: SPC-f-S
+** Buffer: SPC-b
+*** Switch workspace buffer: SPC-b-b or SPC-,
+*** Switch buffer: SPC-b-B or SPC-<
+*** Switch to last buffer: SPC-b-l
+*** Next/previous buffer: SPC-b-n and SPC-b-p
+*** New empty buffer: SPC-b-N
+*** Save buffer: SPC-b-s
+** Frame
+*** make-frame: SPC-o-f
+*** delete-frame: SPC-q-f
+*** doom/delete-frame-with-prompt: SPC-q-f
+*** +evil/next frame:] F
+*** +evil/previous frame:[ F
+** Window: SPC-w
+C-w also works, but SPC-w is better
+*** Horizontal split: SPC-w-s or :sp
+*** Vertical split: SPC-w-v or :vs
+*** Close window: SPC-w-c
+** Folding
+*** Rotate current subtree between states: TAB
+*** Rotate entire buffer between states: S-TAB
+*** close (fold) the trwn but not subtree: M-S-j/k
+
+* Some advanced editing thanks to Evil Mode
+** select an element: vae
+** delete an element: dae
+** select a subtree: vaR
+** delete a subtree: daR
+** yank a subtree: yiR
+
+* The TODO list [1/2]
+** TODO example one
+** DONE example two
+** To remove TODO: S-LEFT
+** Open TODO state list: SPC-m-t
+*** mark as TODO: SPC-m-t-t
+** open org-schedule: SPC-m-d-s
+*** Click on the date in the calendar.
+*** S-ARROWS to change the date of scheduled item.
+*** S-ARROWS also works for scheduled item in the org file.
+** RET toggles TODO and DONE
+** To create a checkbox: - [ ] [0/0] [0%]
+- [-] one [1/3] [33%]
+  - [ ] 1
+  - [ ] 2
+  - [X] 3
+- [X] two
+*** Tick/untick with C-c C-c or SPC-m-x
+*** RET to rotate states
+
+* Org-agenda
+** launch with SPC-o-A or SPC-o-a-a or SPC-n-a or M-x org-agenda followed by...
+*** a = agenda for current week (things that are scheduled)
+*** t = list TODO items that are open (not done)
+**** Inside the TODO view, you can simply hit "t" to change the state.
+**** This also works inside the agenda view.
+**** Outside of this view, you need to hit SPC-m-t to get the state list.
+*** s = search by keyword
+You can use regex in the searches
+** SCHEDULED: <... ++1d>
+Use this ++1d to make it a daily recurring task.
+** SCHEDULED: <...>--<...>
+Use this to schedule tasks during this period.
+** org-agenda-file-to-front: C-c [
+** org-remove-file: C-c ]
+
+* org-journal
+** New Entry: SPC-n-j-j
+** New Scheduled Entry: SPC-n-j-J
+
+* other stuff
+** Inside config.org (could be in ~/.doom.d):
+Do C-c C-c to refresh setup
+Then do M-x org-babel-tangle to convert code blocks in org files.
+** To timestamp the task when it's marked as done:
+Add (setq org-log-done 'time) to config
+Or use (setq org-log-done 'note) to add both timestamp and a note.
