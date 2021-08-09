@@ -91,3 +91,24 @@ Then do M-x org-babel-tangle to convert code blocks in org files.
 ** To timestamp the task when it's marked as done:
 Add (setq org-log-done 'time) to config
 Or use (setq org-log-done 'note) to add both timestamp and a note.
+
+* Magit: SPC-g
+** git status: SPC-g-g
+*** move cursor to a commit:
+dwim means 'do what I mean'
+**** diff popup: d
+***** diff dwim: d-d
+**** log popup: l
+***** log dwim: l-l
+*** move cursor to a hunk:
+**** stage: s
+**** unstage: u
+**** stage everything: S
+**** unstage everything: U
+*** select a region of changes or hunk: C-SPC
+**** s and u also work
+*** commit popup: c
+**** create a regular new commit: c-c
+*** fetch popup: f
+*** pull popup: F
+*** push popup: p or P
