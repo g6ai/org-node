@@ -43,7 +43,7 @@ After doom sync, do =M-x doom/reload=: =SPC h r r=
 - delete a subtree: =daR=
 - yank a subtree: =yiR=
 
-* The TODO list ~[1/2]~
+* The TODO list [1/2]
 ** TODO ~TODO example one~
 ** DONE ~DONE example two~
 ** To remove TODO: =S-LEFT=
