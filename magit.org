@@ -1,7 +1,9 @@
 #+TITLE: Magit Basics
 
+/Note/: this is intended for Doom Emacs.
+
 Magit: =SPC g=
-* git status: =SPC g g=
+* status buffer: =SPC g g=
 ** move cursor to a commit, then:
 /dwim/ means 'do what I mean'
 - diff popup: =d=
@@ -21,3 +23,4 @@ Magit: =SPC g=
 ** fetch popup: =f=
 ** pull popup: =F=
 ** push popup: =p= or =P=
+** press =q= to quit status buffer
