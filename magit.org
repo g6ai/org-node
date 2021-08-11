@@ -3,7 +3,7 @@
 Magit: =SPC g=
 * git status: =SPC g g=
 ** move cursor to a commit, then:
-dwim means 'do what I mean'
+/dwim/ means 'do what I mean'
 - diff popup: =d=
   + diff dwim: =d d=
 - log popup: =l=
@@ -16,7 +16,8 @@ dwim means 'do what I mean'
 ** select a region of changes or hunk: =C-SPC=
 =s= and =u= also work
 ** commit popup: =c=
-create a regular new commit: =c c=
+- create a regular new commit: =c c=
+- when done, press =C-c C-c=
 ** fetch popup: =f=
 ** pull popup: =F=
 ** push popup: =p= or =P=
