@@ -1,22 +1,22 @@
 #+TITLE: Magit Basics
 
-* Magit: =SPC g=
-** git status: =SPC g g=
-*** move cursor to a commit, then:
+Magit: =SPC g=
+* git status: =SPC g g=
+** move cursor to a commit, then:
 dwim means 'do what I mean'
 - diff popup: =d=
   + diff dwim: =d d=
 - log popup: =l=
   + log dwim: =l l=
-*** move cursor to a hunk, then:
+** move cursor to a hunk, then:
 - stage: =s=
 - unstage: =u=
 - stage everything: =S=
 - unstage everything: =U=
-*** select a region of changes or hunk: =C-SPC=
+** select a region of changes or hunk: =C-SPC=
 =s= and =u= also work
-*** commit popup: =c=
+** commit popup: =c=
 create a regular new commit: =c c=
-*** fetch popup: =f=
-*** pull popup: =F=
-*** push popup: =p= or =P=
+** fetch popup: =f=
+** pull popup: =F=
+** push popup: =p= or =P=
