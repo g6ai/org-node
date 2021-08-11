@@ -72,9 +72,10 @@ Tick/untick with =C-c C-c= or =SPC m x=. Use =RET= to rotate states.
   + Outside of this view, you need to hit =SPC m t= to get the state list.
 - =s= = search by keyword
   + You can use regex in the searches
-** ~SCHEDULED: <... ++1d>~
-Use this ++1d to make it a daily recurring task.
-** ~SCHEDULED: <...>--<...>~
+** schedule
+*** ~SCHEDULED: <... ++1d>~
+Use this =++1d= to make it a daily recurring task.
+*** ~SCHEDULED: <...>--<...>~
 Use this to schedule tasks during this period.
 ** /org-agenda-file-to-front/: =C-c [=
 ** /org-remove-file/: =C-c ]=
