@@ -1,2 +1,5 @@
 * org-node
 *Org-node* is my notes on /Org-mode/ and relevant /Emacs/ knowledge.
+** List of Contents
+- [[https://github.com/g6ai/org-node/blob/main/basics.org][Org-mode Basics in Doom Emacs]]
+- [[https://github.com/g6ai/org-node/blob/main/magit.org][Magit Basics]]
