@@ -23,8 +23,8 @@ Magit: =SPC g=
 =s= and =u= also work
 ** commit popup: =c=
 - create a regular new commit: =c c=
-- when done, press =C-c C-c=
 - reword: =c w=
+- when done, press =C-c C-c=
 ** fetch popup: =f=
 ** pull popup: =F=
 ** push popup: =p= or =P=
