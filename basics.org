@@ -1,7 +1,7 @@
 #+TITLE: Org-mode Basics in Doom Emacs
 
 * Basics of Doom Emacs
-** =M-x= or =SPC :=
+** /counsel-M-x/: =M-x= or =SPC :=
 ** Toggle /evil-emacs-state/: =C-z=
 - Check /helpful-key/:
   + In Evil: =SPC h k=
