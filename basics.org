@@ -2,6 +2,10 @@
 
 * Basics of Doom Emacs
 ** =M-x= or =SPC :=
+** Toggle /evil-emacs-state/: =C-z=
+- Check /helpful-key/:
+  + In Evil: =SPC h k=
+  + Outside Evil: =C-h k=
 ** Find in Doom help: =SPC h d s=
 ** Whenever touched package settings: =doom sync=
 After doom sync, do =M-x doom/reload=: =SPC h r r=
