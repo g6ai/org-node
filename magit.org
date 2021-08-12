@@ -25,4 +25,7 @@ Magit: =SPC g=
 ** fetch popup: =f=
 ** pull popup: =F=
 ** push popup: =p= or =P=
+- push: =p p=
+- push with =--force=: =p - F p=
+  + this could be useful when you've already pushed the commit to the remote and then did rewording.
 ** press =q= to quit status buffer
