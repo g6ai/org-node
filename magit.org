@@ -4,7 +4,8 @@
 
 Magit: =SPC g=
 * status buffer: =SPC g g=
-** move up / down one section: =[= / =]=
+** move cursor up / down one section: =C-k= / =C-j=
+** move cursor up / down one section on the same level: =[= / =]=
 ** move cursor to a commit, then:
 /dwim/ means 'do what I mean'
 - diff popup: =d=
