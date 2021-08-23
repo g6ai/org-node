@@ -8,8 +8,8 @@
   + Outside Evil: =C-h k=
 ** Find in Doom help: =SPC h d s=
 ** Whenever touched package settings: =doom sync=
-=doom sync -u= also updates packages
-After doom sync, do =M-x doom/reload=: =SPC h r r=
+- =doom sync -u= also updates packages
+- After doom sync, do =M-x doom/reload=: =SPC h r r=
 ** File
 *** Find file (open ivy): =SPC .=
 - Move cursor up and down: =C-j= and =C-k=, or =C-n= and =C-p=
