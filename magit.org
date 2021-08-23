@@ -31,4 +31,6 @@ Magit: =SPC g=
 - push: =p p=
 - push with =--force=: =p - F p=
   + this could be useful when you've already pushed the commit to the remote and then did rewording.
+** magit-refresh: =g r= or =g z=
+magit-refresh-all: =g R=
 ** press =q= to quit status buffer
