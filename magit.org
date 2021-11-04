@@ -19,8 +19,15 @@ Magit: =SPC g=
 - unstage: =u=
 - stage everything: =S=
 - unstage everything: =U=
-** select a region of changes or hunk: =C-SPC=
+** select a region of changes or hunk (/set-mark-command/): =C-@=, =C-SPC= or =V= (in Doom Emacs)
 =s= and =u= also work
+** refresh diffs:
+From https://emacsair.me/2017/09/01/magit-walk-through/, *Changing diff arguments* section:
+Instead of using a hunk internal region to just stage parts of the hunk, you oculd also have told Git to make the hunks smaller using the =-U= argument.
+To do so, press =-= until the hunk in question breaks up into two. Use =+= to do the opposite.
+*** /magit-diff-less-context/: ===
+This is remapped by Doom Emacs. The original key is =-=, see https://magit.vc/manual/magit/Refreshing-Diffs.html.
+*** /magit-diff-more-context/: =+=
 ** commit popup: =c=
 - create a regular new commit: =c c=
 - reword: =c w=
