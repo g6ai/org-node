@@ -1,4 +1,4 @@
-#+TITLE: Org-mode Basics in Doom Emacs
+#+TITLE: Doom Emacs Basics
 
 * Basics of Doom Emacs
 ** /counsel-M-x/: =M-x= or =SPC :=
