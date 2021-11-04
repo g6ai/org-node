@@ -4,12 +4,22 @@
 
 * Toggle /evil-emacs-state/: =C-z=
 - Check /helpful-key/:
-  + In Evil: =SPC h k=
+  + In Evil: =SPC h k= (/describe-key/)
   + Outside Evil: =C-h k=
-** Find in Doom help: =SPC h d s=
-** Whenever touched package settings: =doom sync=
+- /counsel-describe-function/:
+  + In Evil: =SPC h f= (/describe-function/)
+  + Outside Evil: =C-h f=
+- /counsel-describe-variable/:
+  + In Evil: =SPC h v= (/describe-variable/)
+  + Outside Evil: =C-h v=
+
+* Find in Doom help: =SPC h d s=
+
+* Whenever touched package settings: =doom sync=
 - =doom sync -u= also updates packages
 - After doom sync, do =M-x doom/reload=: =SPC h r r=
+  + Sometimes this is not enough, so restart Emacs
+what about modifying =init.el=, the file-templates?
 
 * File
 ** Find file (open ivy): =SPC .=
@@ -57,3 +67,4 @@
 - Inside config.org (could be in =~/.doom.d=):
   + Do =C-c C-c= to refresh setup
   + Then do =M-x org-babel-tangle= to convert code blocks in org files.
+- /toggle-truncate-lines/
