@@ -1,8 +1,8 @@
 #+TITLE: Doom Emacs Basics
 
-* Basics of Doom Emacs
-** /counsel-M-x/: =M-x= or =SPC :=
-** Toggle /evil-emacs-state/: =C-z=
+* /counsel-M-x/: =M-x= or =SPC :=
+
+* Toggle /evil-emacs-state/: =C-z=
 - Check /helpful-key/:
   + In Evil: =SPC h k=
   + Outside Evil: =C-h k=
@@ -10,33 +10,38 @@
 ** Whenever touched package settings: =doom sync=
 - =doom sync -u= also updates packages
 - After doom sync, do =M-x doom/reload=: =SPC h r r=
-** File
-*** Find file (open ivy): =SPC .=
+
+* File
+** Find file (open ivy): =SPC .=
 - Move cursor up and down: =C-j= and =C-k=, or =C-n= and =C-p=
 - Reveal alternative options: =C-o=
-*** Find file in project: =SPC SPC=
-*** File: =SPC f=
+** Find file in project: =SPC SPC=
+** File: =SPC f=
 - Rename/move file: =SPC f R=
 - Save file as...: =SPC f S=
-** Buffer: =SPC b=
+
+* Buffer: =SPC b=
 - Switch workspace buffer: =SPC b b= or =SPC ,=
 - Switch buffer: =SPC b B= or =SPC <=
 - Switch to last buffer: =SPC b l=
 - Next/previous buffer: =SPC b n= and =SPC b p=
 - New empty buffer: =SPC b N=
 - Save buffer: =SPC b s=
-** Frame
+
+* Frame
 - /make-frame/: =SPC o f=
 - /delete-frame/: =SPC q f=
 - /doom/delete-frame-with-prompt/: =SPC q f=
 - /+evil/next frame/: =] F=
 - /+evil/previous frame/: =[ F=
-** Window: =SPC w=
+
+* Window: =SPC w=
 =C-w= also works, but =SPC w= is better
 - Horizontal split: =SPC w s= or =:sp=
 - Vertical split: =SPC w v= or =:vs=
 - Close window: =SPC w c=
-** Folding
+
+* Folding
 - Rotate current subtree between states: =TAB=
 - Rotate entire buffer between states: =S-TAB=
 - close (fold) the trwn but not subtree: =M-S-j/k=
@@ -48,11 +53,7 @@
 - delete a subtree: =daR=
 - yank a subtree: =yiR=
 
-
 * other stuff
 - Inside config.org (could be in =~/.doom.d=):
   + Do =C-c C-c= to refresh setup
   + Then do =M-x org-babel-tangle= to convert code blocks in org files.
-- To timestamp the task when it's marked as done:
-  + Add ~(setq org-log-done 'time)~ to config
-  + Or use ~(setq org-log-done 'note)~ to add both timestamp and a note.
