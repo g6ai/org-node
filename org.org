@@ -54,7 +54,7 @@ Use this to schedule tasks during this period.
 - /org-agenda-file-to-front/: =C-c [=
   + Move/add the current file to the top of the agenda file list.
 - /org-remove-file/: =C-c ]=
-  + Remove current file from the list of files in variable 'org-agenda-files'.
+  + Remove current file from the list of files in variable /org-agenda-files/.
 
 * Markup for Rich contents
 ** Emphasis and Monospace
