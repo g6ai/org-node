@@ -2,5 +2,6 @@
 My notes on *Emacs* knowledge, written with *Org-mode*.
 ** List of Contents
 - [[https://github.com/g6ai/org-node/blob/main/basics.org][Doom Emacs Basics]]
-- [[https://github.com/g6ai/org-node/blob/main/magit.org][Magit Basics]]
 - [[https://github.com/g6ai/org-node/blob/main/org.org][Org-mode Basics]]
+- [[https://github.com/g6ai/org-node/blob/main/magit.org][Magit Basics]]
+- [[https://github.com/g6ai/org-node/blob/main/lispy.org][lispy Basics]]
