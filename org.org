@@ -66,7 +66,7 @@ Use this to schedule tasks during this period.
 - +strike-through+
 Text in the code and verbatim string is not processed for Org specific syntax; it is exported verbatim.
 ** Special Symbols
-- /org-toggle-pretty-entities/: =C-c C-x \=, I set it to =SPC \ \=
+- /org-toggle-pretty-entities/: =C-c C-x \=, I set it to =SPC \=
 
 * Worg
 - [[https://orgmode.org/worg/org-symbols.html][Symbols in Org-mode]]
