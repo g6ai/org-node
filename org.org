@@ -68,6 +68,9 @@ Text in the code and verbatim string is not processed for Org specific syntax; i
 ** Special Symbols
 - /org-toggle-pretty-entities/: =C-c C-x \=, I set it to =SPC \ \=
 
+* Worg
+- [[https://orgmode.org/worg/org-symbols.html][Symbols in Org-mode]]
+
 * org-journal
 - New Entry: =SPC n j j=
 - New Scheduled Entry: =SPC n j J=
