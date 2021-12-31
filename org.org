@@ -1,8 +1,11 @@
 #+TITLE: Org
 
-Organised as per The Org Manual
+Organised as per [[https://orgmode.org/manual/][The Org Manual]]
 
 * Document Structure
+** Headlines
+*** Dynamic Headline Numbering
+**** /org-num-mode/
 ** Visibility Cycling
 *** Initial visibility
 When Emacs first visits an Org file, the global state is set to =showeverything=. This can be configured through the variable =org-startup-folded=, or on a per-file basis by adding a =STARTUP= keyword to =overview=, =content=, =showall=, =showeverything= or =show<n>levels= (n = 2..5)
@@ -96,5 +99,6 @@ Text in the code and verbatim string is not processed for Org specific syntax; i
 - New Scheduled Entry: =SPC n j J=
 
 * Org-roam
+[[https://www.orgroam.com/manual.html][Org-roam User Manual]]
 ** Org-roam-UI
-/org-roam-ui-mode/
+*** /org-roam-ui-mode/
