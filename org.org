@@ -23,6 +23,11 @@ When Emacs first visits an Org file, the global state is set to =showeverything=
 *** Closing items
 - Add ~(setq org-log-done 'time)~ to config
 - Or use ~(setq org-log-done 'note)~ to add both timestamp and a note.
+*** Tracking TODO state changes
+- ~org-log-into-drawer~
+*** Tracking your habits
+- ~.+2d/3d~
+- The habits is excluded from the future days in agenda view.
 ** Breaking Down Tasks into Subtasks [1/2] [50%]
 *** TODO ~TODO example one~
 *** DONE ~DONE example two~
@@ -60,8 +65,11 @@ Available formats:
 - =S-ARROWS= to change the date of scheduled item.
 - =S-ARROWS= also works for scheduled item in the org file.
 *** Repeated tasks
+- Use 'y', 'm', 'w', 'd' and 'h' letters
 - ~SCHEDULED: <2003-09-16 Tue 09:39 ++1d>~
-Use this =++1d= to make it a daily recurring task.
+  next scheduled time is at 09:39 on next day.
+- ~SCHEDULED: <2003-09-16 Tue 09:39 .+1d>~
+  next scheduled time is exactly one day from now.
 
 * Agenda Views
 ** Agenda Files
@@ -91,6 +99,10 @@ Text in the code and verbatim string is not processed for Org specific syntax; i
 ** Special Symbols
 - /org-toggle-pretty-entities/: =C-c C-x \=, I set it to =SPC \=
 
+* Exporting
+** [[https://orgmode.org/manual/Export-Settings.html#Export-Settings][Export Settings]]
+=#+TITLE= (mind the difference from the one in Org-roam)
+
 * Worg
 - [[https://orgmode.org/worg/org-symbols.html][Symbols in Org-mode]]
 
@@ -99,6 +111,11 @@ Text in the code and verbatim string is not processed for Org specific syntax; i
 - New Scheduled Entry: =SPC n j J=
 
 * Org-roam
-[[https://www.orgroam.com/manual.html][Org-roam User Manual]]
+** [[https://www.orgroam.com/manual.html][Org-roam User Manual]]
+*** [[https://www.orgroam.com/manual.html#Titles-and-Aliases][8.2 Titles and Aliases]]
+=#+title=
 ** Org-roam-UI
 *** /org-roam-ui-mode/
+** Org Roam BibTeX
+
+* Citar
