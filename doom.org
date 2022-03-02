@@ -39,8 +39,12 @@ what about modifying =init.el=, the file-templates?
 - New empty buffer: =SPC b N=
 - Save buffer: =SPC b s=
 - /revert-buffer/: =SPC b r=
-  + Add this line as buffer's first line to auto revert buffer:
-    # -*- eval: (auto-revert-mode); -*-
+  + Add this line and comment it as buffer's first line to auto revert buffer:
+    =-*- eval: (auto-revert-mode); -*-=
+    so the first line can be either
+    =;; -*- eval: (auto-revert-mode); -*-=
+    or
+    =# -*- eval: (auto-revert-mode); -*-=
 
 * Frame
 - /make-frame/: =SPC o f=
