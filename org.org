@@ -11,6 +11,8 @@ Organised as per [[https://orgmode.org/manual/][The Org Manual]]
 When Emacs first visits an Org file, the global state is set to =showeverything=. This can be configured through the variable =org-startup-folded=, or on a per-file basis by adding a =STARTUP= keyword to =overview=, =content=, =showall=, =showeverything= or =show<n>levels= (n = 2..5)
 
 * Hyperlinks
+** External Links
+- file
 ** /org-toggle-link-display/: =SPC m l t=
 
 * ~TODO~ Items
