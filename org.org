@@ -1,39 +1,39 @@
 #+TITLE: Org
 
-Organised as per [[https://orgmode.org/manual/][The Org Manual]]
+Organized as per [[https://orgmode.org/manual/][The Org Manual]]
 
-* Document Structure
-** Headlines
-*** Dynamic Headline Numbering
-**** /org-num-mode/
-** Visibility Cycling
-*** Initial visibility
+* 2 Document Structure
+** 2.1 Headlines
+*** 17.6 Dynamic Headline Numbering
+- /org-num-mode/
+** 2.2 Visibility Cycling
+*** 2.2.2 Initial visibility
 When Emacs first visits an Org file, the global state is set to =showeverything=. This can be configured through the variable =org-startup-folded=, or on a per-file basis by adding a =STARTUP= keyword to =overview=, =content=, =showall=, =showeverything= or =show<n>levels= (n = 2..5)
 
-* Hyperlinks
-** External Links
+* 4 Hyperlinks
+** 4.4 External Links
 - file
 ** /org-toggle-link-display/: =SPC m l t=
 
-* ~TODO~ Items
-** Basic TODO Functionality
-*** /org-todo/: =SPC m t=
-- mark as TODO: =SPC m t t=
-*** To remove TODO: =S-LEFT=
-*** =RET= toggles TODO and DONE
-** Progress Logging
-*** Closing items
+* 5 ~TODO~ Items
+** 5.1 Basic TODO Functionality
+- /org-todo/: =SPC m t=
+  + mark as TODO: =SPC m t t=
+- To remove TODO: =S-LEFT=
+- =RET= toggles TODO and DONE
+** 5.3 Progress Logging
+*** 5.3.1 Closing items
 - Add ~(setq org-log-done 'time)~ to config
 - Or use ~(setq org-log-done 'note)~ to add both timestamp and a note.
-*** Tracking TODO state changes
+*** 5.3.2 Tracking TODO state changes
 - ~org-log-into-drawer~
-*** Tracking your habits
+*** 5.3.3 Tracking your habits
 - ~.+2d/3d~
 - The habits is excluded from the future days in agenda view.
-** Breaking Down Tasks into Subtasks [1/2] [50%]
+** 5.5 Breaking Down Tasks into Subtasks [1/2] [50%]
 *** TODO ~TODO example one~
 *** DONE ~DONE example two~
-** Checkboxes
+** 5.6 Checkboxes
 - [-] one [1/3] [33%]
   + [-] 1
   + [ ] 2
@@ -42,8 +42,8 @@ When Emacs first visits an Org file, the global state is set to =showeverything=
 *** /org-toggle-checkbox/: =C-c C-c= or =SPC m x= 
 *** =RET= rotates states
 
-* Dates and Times
-** Timestamps
+* 8 Dates and Times
+** 8.1 Timestamps
 Available formats:
 - ~<2003-09-16 Tue>~
 - ~<2003-09-16 Tue 09:39>~ 
@@ -57,29 +57,38 @@ Available formats:
 <2003-09-16 Tue 09:39>--<2003-09-16 Tue 10:00> 
 *** Inactive timestamp
 [2003-09-16 Tue 09:39] 
-** Deadlines and Scheduling
+** 8.3 Deadlines and Scheduling
 - ~SCHEDULED: <2003-09-16 Tue 09:39>~
 - ~SCHEDULED: <2003-09-16 Tue 09:39>--<2003-09-16 Tue 10:00>~
-*** Inserting deadlines or schedules
+*** 8.3.1 Inserting deadlines or schedules
 **** /org-deadline/: =SPC m d d=
 **** /org-schedule/: =SPC m d s=
 - Click on the date in the calendar.
 - =S-ARROWS= to change the date of scheduled item.
 - =S-ARROWS= also works for scheduled item in the org file.
-*** Repeated tasks
+*** 8.3.2 Repeated tasks
 - Use 'y', 'm', 'w', 'd' and 'h' letters
 - ~SCHEDULED: <2003-09-16 Tue 09:39 ++1d>~
   next scheduled time is at 09:39 on next day.
 - ~SCHEDULED: <2003-09-16 Tue 09:39 .+1d>~
   next scheduled time is exactly one day from now.
 
-* Agenda Views
-** Agenda Files
+* 10 Capture and Attachments
+** 10.1 Capture
+*** 10.1.1 Setting up capture
+=org-default-notes-file= value is originally set by =~/.emacs.d/.local/straight/repos/org/lisp/org.el=, then overridden by =~/.emacs.d/modules/lang/org/config.el=.
+*** 10.1.2 Using capture
+**** /org-capture/: =SPC X=
+*** 10.1.3 Capture templates
+=org-capture-templates= value is set by =~/.emacs.d/modules/lang/org/config.el=.
+
+* 11 Agenda Views
+** 11.1 Agenda Files
 - /org-agenda-file-to-front/: =C-c [=
   + Move/add the current file to the top of the agenda file list.
 - /org-remove-file/: =C-c ]=
   + Remove current file from the list of files in variable /org-agenda-files/.
-** The Agenda Dispatcher
+** 11.2 The Agenda Dispatcher
 launch with =M-x org-agenda= or =SPC o A= or =SPC o a a= or =SPC n a= (use this) followed by...
 - =a= = agenda for current week (things that are scheduled)
 - =t= = list TODO items that are open (not done)
@@ -89,8 +98,8 @@ launch with =M-x org-agenda= or =SPC o A= or =SPC o a a= or =SPC n a= (use this)
 - =s= = search by keyword
   + You can use regex in the searches
 
-* Markup for Rich contents
-** Emphasis and Monospace
+* 12 Markup for Rich contents
+** 12.2 Emphasis and Monospace
 - *bold*
 - /italic/
 - _underlined_
@@ -98,26 +107,37 @@ launch with =M-x org-agenda= or =SPC o A= or =SPC o a a= or =SPC n a= (use this)
 - ~code~
 - +strike-through+
 Text in the code and verbatim string is not processed for Org specific syntax; it is exported verbatim.
-** Special Symbols
+** 12.4 Special Symbols
 - /org-toggle-pretty-entities/: =C-c C-x \=, I set it to =SPC \=
 
-* Exporting
-** [[https://orgmode.org/manual/Export-Settings.html#Export-Settings][Export Settings]]
+* 13 Exporting
+** 13.2 Export Settings
 =#+TITLE= (mind the difference from the one in Org-roam)
 
 * Worg
 - [[https://orgmode.org/worg/org-symbols.html][Symbols in Org-mode]]
 
 * org-journal
-- New Entry: =SPC n j j=
-- New Scheduled Entry: =SPC n j J=
+- New Entry, /org-journal-new-entry/: =SPC n j j=
+- New Scheduled Entry, /org-journal-new-scheduled-entry/: =SPC n j J=
+** doomscript
+it should be called =org-journal=, with execution privilege; and be executed by ~./org-journal arg_placeholder~.
+#+begin_src elisp
+#!/usr/bin/env doomscript
 
-* Org-roam
-** [[https://www.orgroam.com/manual.html][Org-roam User Manual]]
-*** [[https://www.orgroam.com/manual.html#Titles-and-Aliases][8.2 Titles and Aliases]]
-=#+title=
-** Org-roam-UI
-*** /org-roam-ui-mode/
-** Org Roam BibTeX
+(defcli! org-journal (&args files)
+  (require 'doom-start)
+  (dolist (file files)
+    (org-journal-new-entry t)
+    (save-buffer)))
 
-* Citar
+(run! "org-journal" (cdr (member "--" argv)))
+#+end_src
+  
+* beorg
+The quick capture has a default file =inbox.org=. I elect to not use it, but to use org-journal instead.
+** org-journal template
+- State: ~TODO~
+- Subtree item: ~%(date->string (date-adjust (current-date) -5 'hours) "~A")%~
+** beorg-journal shortcut
+- The X-Callback URL looks like this, variables included (look at the the shortcut for definition): ~beorg://x-callback-url/capture?title=URL Encoded Text%20URL Encoded Text&notes=URL Encoded Text&file=journal%2FFormatted Date&template=org-journal&x-success=beorg://x-callback-url/file?file=journal%2FFormatted Date~

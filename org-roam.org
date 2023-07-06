@@ -1,0 +1,19 @@
+#+TITLE: Org-roam
+
+Organized as per [[https://www.orgroam.com/manual.html][Org-roam User Manual]]
+
+* 5 Getting Started
+** 5.4 Creating and Linking Nodes
+/org-roam-capture/: =SPC n r n=
+* 8 Node Properties
+** 8.2 Titles and Aliases
+=#+title=
+* 12 The Templating System
+/org-roam-capture-templates/
+* 13 Extensions
+** 13.3 org-roam-dailies
+=org-roam-dailies-capture-templates= is set by =~/.emacs.d/.local/straight/repos/org-roam/extensions/org-roam-dailies.el=.
+
+* [[https://github.com/org-roam/org-roam-ui][Org-roam-UI]]
+- /org-roam-ui-mode/
+* [[https://github.com/org-roam/org-roam-bibtex][Org Roam BibTeX]] (ORB)
