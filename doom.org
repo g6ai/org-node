@@ -13,6 +13,10 @@
 - /counsel-describe-variable/:
   + In Evil: =SPC h v= (/describe-variable/)
   + Outside Evil: =C-h v=
+- /describe-char/: =SPC h '=
+- /insert-char/:
+  + In Evil: =SPC i u=
+  + Outside Evil: =C-x 8 RET=
 
 * Find in Doom help: =SPC h d s=
 
