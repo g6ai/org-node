@@ -1,7 +1,8 @@
 * Org-node
 My notes on *Emacs* knowledge, written with *Org-mode*.
-** List of Contents
+** Table of Contents
 - [[https://github.com/g6ai/org-node/blob/main/doom.org][Doom Emacs Basics]]
 - [[https://github.com/g6ai/org-node/blob/main/org.org][Org-mode Basics]]
+  + [[https://github.com/g6ai/org-node/blob/main/org-roam.org][Org-roam Basics]]
 - [[https://github.com/g6ai/org-node/blob/main/magit.org][Magit Basics]]
 - [[https://github.com/g6ai/org-node/blob/main/lispy.org][lispy Basics]]
